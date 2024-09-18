@@ -1,0 +1,12 @@
+def merge_arrays(arr1, arr2):
+    arr3 = arr1 + arr2
+    arr3.sort()
+    return arr3
+
+# Driver code
+arr1 = [1, 3, 5, 7]
+arr2 = [2, 4, 6, 8]
+arr3 = merge_arrays(arr1, arr2)
+
+for value in arr3:
+    print(value, end=" ")
