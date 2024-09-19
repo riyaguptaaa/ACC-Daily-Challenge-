@@ -1,0 +1,15 @@
+find_unique_pairs(arr):
+    seen = set()
+    result = set()
+
+    for num in arr:
+        if -num in seen:
+            
+            result.add((min(num, -num), max(num, -num)))
+        seen.add(num)
+
+    return list(result)
+
+
+arr = [1, -1, 2, -2, 3, 3, -3]
+print(find_unique_pairs(arr))
